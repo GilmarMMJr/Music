@@ -12,6 +12,7 @@
 		51BD18D82828B26800DD1913 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BD18D72828B26800DD1913 /* MusicViewController.swift */; };
 		51BD18DD2828B27D00DD1913 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51BD18DC2828B27D00DD1913 /* Assets.xcassets */; };
 		51BD18E02828B27D00DD1913 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51BD18DE2828B27D00DD1913 /* LaunchScreen.storyboard */; };
+		51BD18E82829D0D100DD1913 /* ViewCodeBuild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BD18E72829D0D100DD1913 /* ViewCodeBuild.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		51BD18DC2828B27D00DD1913 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51BD18DF2828B27D00DD1913 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51BD18E12828B27D00DD1913 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51BD18E72829D0D100DD1913 /* ViewCodeBuild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeBuild.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				51BD18DC2828B27D00DD1913 /* Assets.xcassets */,
 				51BD18DE2828B27D00DD1913 /* LaunchScreen.storyboard */,
 				51BD18E12828B27D00DD1913 /* Info.plist */,
+				51BD18E72829D0D100DD1913 /* ViewCodeBuild.swift */,
 			);
 			path = Music;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51BD18E82829D0D100DD1913 /* ViewCodeBuild.swift in Sources */,
 				51BD18D82828B26800DD1913 /* MusicViewController.swift in Sources */,
 				51BD18D42828B26800DD1913 /* AppDelegate.swift in Sources */,
 				51BD18D62828B26800DD1913 /* SceneDelegate.swift in Sources */,
