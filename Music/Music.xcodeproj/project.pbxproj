@@ -13,6 +13,10 @@
 		51BD18DD2828B27D00DD1913 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51BD18DC2828B27D00DD1913 /* Assets.xcassets */; };
 		51BD18E02828B27D00DD1913 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51BD18DE2828B27D00DD1913 /* LaunchScreen.storyboard */; };
 		51BD18E82829D0D100DD1913 /* ViewCodeBuild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BD18E72829D0D100DD1913 /* ViewCodeBuild.swift */; };
+		51BD18EA2829DADC00DD1913 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BD18E92829DADC00DD1913 /* Data.swift */; };
+		51BD18EC2829DB4400DD1913 /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BD18EB2829DB4400DD1913 /* DownloadService.swift */; };
+		51BD18EE2829DBBC00DD1913 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BD18ED2829DBBC00DD1913 /* Download.swift */; };
+		51BD18F02829DF8200DD1913 /* Extension+MusicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BD18EF2829DF8200DD1913 /* Extension+MusicVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,10 @@
 		51BD18DF2828B27D00DD1913 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51BD18E12828B27D00DD1913 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51BD18E72829D0D100DD1913 /* ViewCodeBuild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeBuild.swift; sourceTree = "<group>"; };
+		51BD18E92829DADC00DD1913 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		51BD18EB2829DB4400DD1913 /* DownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
+		51BD18ED2829DBBC00DD1913 /* Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
+		51BD18EF2829DF8200DD1913 /* Extension+MusicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+MusicVC.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +73,10 @@
 				51BD18DE2828B27D00DD1913 /* LaunchScreen.storyboard */,
 				51BD18E12828B27D00DD1913 /* Info.plist */,
 				51BD18E72829D0D100DD1913 /* ViewCodeBuild.swift */,
+				51BD18E92829DADC00DD1913 /* Data.swift */,
+				51BD18EB2829DB4400DD1913 /* DownloadService.swift */,
+				51BD18ED2829DBBC00DD1913 /* Download.swift */,
+				51BD18EF2829DF8200DD1913 /* Extension+MusicVC.swift */,
 			);
 			path = Music;
 			sourceTree = "<group>";
@@ -140,9 +152,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				51BD18E82829D0D100DD1913 /* ViewCodeBuild.swift in Sources */,
+				51BD18EA2829DADC00DD1913 /* Data.swift in Sources */,
 				51BD18D82828B26800DD1913 /* MusicViewController.swift in Sources */,
 				51BD18D42828B26800DD1913 /* AppDelegate.swift in Sources */,
+				51BD18F02829DF8200DD1913 /* Extension+MusicVC.swift in Sources */,
 				51BD18D62828B26800DD1913 /* SceneDelegate.swift in Sources */,
+				51BD18EE2829DBBC00DD1913 /* Download.swift in Sources */,
+				51BD18EC2829DB4400DD1913 /* DownloadService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

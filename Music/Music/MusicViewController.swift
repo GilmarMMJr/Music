@@ -6,8 +6,17 @@
 //
 
 import UIKit
+import AVKit
+import AVFoundation
 
 class MusicViewController: UIViewController {
+    
+    let downloadService = DownloadService()
+    
+    lazy var downloadsSession: URLSession = {
+        let configurationSession = URLSessionConfiguration.background(withIdentifier: "me.gilmame.bkgsessionconfiguration")
+        return URLSession(configuration: configurationSession, delegate: self, delegateQueue: nil)
+    }()
     
     lazy var titleLabel: UILabel = {
         let title = UILabel()
@@ -36,26 +45,37 @@ class MusicViewController: UIViewController {
         button.addTarget(self, action: #selector(playDownload), for: .touchUpInside)
         return button
     }()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         setupView()
+        downloadService.downloadSession = downloadsSession
     }
     
     @objc
     func downloadTapped(_ sender: UIButton){
-        print("Teste")
-        view.backgroundColor = .black
+        for url in urlDownloads {
+            downloadService.startDownload(URL(string: url)!)
+        }
     }
     
     @objc
     func playDownload(_ sender: UIButton){
-        print("Teste")
-        view.backgroundColor = .white
+        let playerViewController = AVPlayerViewController()
+        present(playerViewController, animated: true, completion: nil)
+        let url = URL(string: String(describing: urlDownloads.first!))!
+        let player = AVPlayer(url: url)
+        playerViewController.player = player
+        player.play()
     }
-
-
+    
+    let documentsPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+    func localFilePath(for url: URL) -> URL {
+        return documentsPath.appendingPathComponent(url.lastPathComponent)
+    }
+    
+    
 }
 
 
@@ -64,7 +84,6 @@ extension MusicViewController: ViewCodeBuild {
         view.addSubview(titleLabel)
         view.addSubview(downloadButton)
         view.addSubview(playButton)
-
     }
     
     func setupConstraints() {
@@ -83,13 +102,11 @@ extension MusicViewController: ViewCodeBuild {
             playButton.trailingAnchor.constraint(equalTo: downloadButton.trailingAnchor),
             playButton.heightAnchor.constraint(equalToConstant: 50),
             playButton.topAnchor.constraint(equalTo: downloadButton.bottomAnchor, constant: 20)
-            
-            
         ])
-        
     }
     
     func setupAdditionalConfiguration() { }
     
     
 }
+
